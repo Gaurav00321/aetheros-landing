@@ -98,15 +98,6 @@ Join the evolution. Reimagine what an OS can be.
 
 ---
 
-## 🧑‍💻 Getting Started
-```bash
-git clone https://github.com/your-username/aetheros.git
-cd aetheros
-bash install.sh
-```
-
----
-
 ## 🛠️ Contributors
 - **Gaurav Upadhyay** – Founder, AI Systems Architect
 - Open for contributions – reach out or open an issue!
@@ -120,8 +111,8 @@ MIT
 
 ## 💬 Connect
 For collabs, support, or to contribute ideas:
-- 📧 gaurav@aetheros.ai
-- 🌐 https://aetheros.ai (coming soon)
+- 📧 gauravupadhyay.career@gmail.com
+- 🌐 https://aetheros.vercel.app
 
 > “AetherOS is not just an operating system.  
 > It is a soul layer — breathing intelligence into your machine.”
