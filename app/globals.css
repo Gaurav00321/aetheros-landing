@@ -1,3 +1,5 @@
+@import '../styles/cursor.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +31,15 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* Sidebar Variables */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -56,6 +67,15 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    /* Dark Sidebar Variables */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -69,6 +89,10 @@
 }
 
 @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
   .bg-gradient-radial {
     background: radial-gradient(var(--tw-gradient-stops));
   }
@@ -96,45 +120,15 @@
     opacity: 0.8;
   }
   50% {
-    opacity: 1;
+    opacity: 0.4;
   }
 }
 
 @keyframes shimmer {
   0% {
-    transform: translateX(-100%);
+    background-position: -1000px 0;
   }
   100% {
-    transform: translateX(100%);
+    background-position: 1000px 0;
   }
-}
-
-@keyframes spiral-pulse {
-  0%,
-  100% {
-    opacity: 0.3;
-    stroke-width: 1;
-  }
-  50% {
-    opacity: 0.8;
-    stroke-width: 2;
-  }
-}
-
-@keyframes radial-glow {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
-  }
-}
-
-.animate-spiral-pulse {
-  animation: spiral-pulse 4s ease-in-out infinite;
-}
-
-.animate-radial-glow {
-  animation: radial-glow 3s ease-in-out infinite;
 }

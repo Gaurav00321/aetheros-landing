@@ -36,8 +36,8 @@ export function AetherOSLogo() {
         <motion.img
           src="/aether-logo.png"
           alt="AetherOS Logo"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className="drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] filter brightness-110"
           initial={{ opacity: 0 }}
           animate={animate ? { opacity: 1 } : {}}

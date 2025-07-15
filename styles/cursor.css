@@ -1,0 +1,37 @@
+/* Professional cursor styles */
+* {
+  cursor: default;
+}
+
+/* Links and clickable elements */
+a, 
+button,
+[role="button"],
+select,
+summary {
+  cursor: pointer;
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+textarea {
+  cursor: text;
+}
+
+/* Disabled elements */
+button:disabled,
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+/* Resizable elements */
+textarea,
+.resizable {
+  cursor: auto;
+}
